@@ -1,3 +1,5 @@
-import { printHello } from '#Lib/hello.js';
+import { bootstrap } from './server.js';
 
-printHello();
+const SERVER_PORT = process.env.PORT || 8000;
+console.clear();
+bootstrap(SERVER_PORT);
